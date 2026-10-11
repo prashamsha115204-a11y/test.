@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -13,7 +14,6 @@
     <!-- HEADER -->
     <header>
         <div class="header-container">
-
             <img src="images/logo.png" alt="Prashamsa Logo" width="100" height="100">
 
             <nav>
@@ -32,84 +32,80 @@
                 <input type="text" placeholder="Search">
                 <button type="submit">Search</button>
             </form>
-
         </div>
     </header>
 
-
     <!-- MAIN -->
     <main>
-
         <section id="About">
             <div class="about-container">
-
                 <h1>About Me</h1>
 
                 <div class="about-content">
+                    <div class="slider">
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <div class="slide">
+                                    <img src="images/photo.jpeg" alt="My Photo">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/photo2.jpeg" alt="My Second Photo">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/photo3.jpeg" alt="My Third Photo">
+                                </div>
+                            </div>
 
-                    <img src="images/photo.jpeg" alt="My Photo" width="200" height="200">
+                            <button type="button" class="slider-btn prev" aria-label="Previous image">&#10094;</button>
+                            <button type="button" class="slider-btn next" aria-label="Next image">&#10095;</button>
+                        </div>
+
+                        <div class="slider-dots"></div>
+                    </div>
 
                     <p>
                         Hello! My name is Prashamsa.I am currently studying BIT(Bachelors of Information Technology) at
                         Model Institute of Technology. I am a software developer who enjoys learning new technologies,
                         creating websites, and exploring creative ideas.
                     </p>
-
                 </div>
-
             </div>
         </section>
 
-
         <section id="MyProjects">
             <div class="projects-container">
-
                 <h2>My Projects</h2>
 
                 <article>
-
                     <h3>E-commerce Site</h3>
-
                     <p>
                         I developed an e-commerce website designed to provide a simple and user-friendly
                         online shopping experience. The website includes product displays, organized
                         categories, smooth navigation, and essential features that make it easier for
                         users to explore products and make purchasing decisions.
                     </p>
-
                     <a href="https://github.com/" target="_blank">Click here to View Project</a>
-
                 </article>
 
-
                 <article>
-
                     <h3>Inventory Management System</h3>
-
                     <p>
                         I developed an inventory management system to help businesses organize and manage
                         their products efficiently. The system focuses on tracking available stock,
                         maintaining product records, updating inventory information, and simplifying
                         everyday inventory management tasks.
                     </p>
-
                     <a href="https://github.com/" target="_blank">Click here to View Project</a>
-
                 </article>
-
             </div>
         </section>
 
-
         <section id="MySkills">
             <div class="skills-container">
-
                 <h2>My Skills</h2>
 
                 <div class="skills-content">
-
                     <dl>
-
                         <div class="skill-box">
                             <dt>Programming Languages</dt>
                             <dd>Java, Python, C++, JS</dd>
@@ -129,22 +125,16 @@
                             <dt>Frameworks</dt>
                             <dd>.NET, Spring Boot, Angular, Django, Flask</dd>
                         </div>
-
                     </dl>
-
                 </div>
-
             </div>
         </section>
 
-
         <section id="Education">
             <div class="education-container">
-
                 <h2>Education</h2>
 
                 <table>
-
                     <thead>
                         <tr>
                             <th>S.N.</th>
@@ -154,9 +144,7 @@
                             <th>Grade</th>
                         </tr>
                     </thead>
-
                     <tbody>
-
                         <tr>
                             <td>1</td>
                             <td>Secondary Level</td>
@@ -164,7 +152,6 @@
                             <td>3.75</td>
                             <td>A+</td>
                         </tr>
-
                         <tr>
                             <td>2</td>
                             <td>Bachelors Level</td>
@@ -172,22 +159,16 @@
                             <td>Ongoing</td>
                             <td>Ongoing</td>
                         </tr>
-
                     </tbody>
-
                 </table>
-
             </div>
         </section>
 
-
         <section id="ContactMe">
             <div class="contact-container">
-
                 <h2>Contact Me</h2>
 
                 <form>
-
                     <label>Email:</label>
                     <input type="email">
 
@@ -199,36 +180,27 @@
                     <br><br>
 
                     <label>Gender:</label>
-
                     <input type="radio" name="gender"> Male
                     <input type="radio" name="gender"> Female
 
                     <br><br>
 
                     <label>Message:</label>
-
                     <br>
-
                     <textarea rows="4" cols="30" placeholder="Write your message here"></textarea>
 
                     <br><br>
 
                     <input type="submit" value="Enter">
-
                 </form>
-
             </div>
         </section>
-
     </main>
-
 
     <!-- FOOTER -->
     <footer>
-
         <section id="FindMeOn">
             <div class="findme-container">
-
                 <h3>Find Me On</h3>
 
                 <a href="https://www.instagram.com/" target="_blank">
@@ -246,12 +218,10 @@
                 <a href="https://www.linkedin.com/" target="_blank">
                     <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40">
                 </a>
-
             </div>
         </section>
 
         <p>&copy; 2026 Prashamsa. All rights reserved.</p>
-
     </footer>
 
 </body>
